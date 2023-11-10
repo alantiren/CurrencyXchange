@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+:root {
+    --primary-bg-color: #2c3e50; /* Dark Background */
+    --primary-text-color: #fff; /* White Text */
+    --accent-color: #3498db; /* Accent Color */
+    --hover-color: #2980b9; /* Hover Color */
+    --box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +21,13 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 0 10px;
-    background: #f5f5f5;
-    color: #333;
+    background: var(--primary-bg-color);
+    color: var(--primary-text-color);
 }
 
 ::selection {
     color: #fff;
-    background: #675AFE;
+    background: var(--accent-color);
 }
 
 .wrapper {
@@ -27,17 +35,14 @@ body {
     padding: 30px;
     border-radius: 7px;
     background: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 .wrapper header {
     font-size: 28px;
     font-weight: 600;
     text-align: center;
-}
-
-.wrapper form {
-    margin: 40px 0 20px 0;
+    color: var(--accent-color); /* Adjusted title color */
 }
 
 form :where(input, select, button) {
@@ -47,74 +52,45 @@ form :where(input, select, button) {
     border: 1px solid #ccc;
 }
 
-form p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
 form input {
     height: 50px;
     font-size: 16px;
     padding: 0 15px;
     border: 1px solid #ccc;
+    color: #333; /* Adjusted input text color */
 }
 
 form input:focus {
     padding: 0 14px;
-    border: 2px solid #675AFE;
+    border: 2px solid var(--accent-color);
 }
 
-form .drop-list {
-    display: flex;
-    margin-top: 20px;
-    align-items: center;
-    justify-content: space-between;
+form p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--accent-color); /* Adjusted label color */
 }
 
-.drop-list .select-box {
-    display: flex;
-    width: 115px;
-    height: 45px;
-    align-items: center;
-    border-radius: 5px;
-    justify-content: center;
-    border: 1px solid #ccc;
-}
-
-.select-box img {
+.drop-list img {
     max-width: 24px;
 }
 
-.select-box select {
+.drop-list select {
     width: auto;
     font-size: 16px;
     background: none;
     margin: 0 5px;
+    color: #333; /* Adjusted select text color */
 }
 
-.select-box select::-webkit-scrollbar {
-    width: 8px;
+.drop-list select option {
+    color: #333;
 }
 
-.select-box select::-webkit-scrollbar-track {
-    background: #f5f5f5;
-}
-
-.select-box select::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 8px;
-    border-right: 2px solid #f5f5f5;
-}
-
-.drop-list .icon {
-    cursor: pointer;
-    margin-top: 30px;
-    font-size: 22px;
-}
-
-form .exchange-rate {
+.form .exchange-rate {
     font-size: 17px;
     margin: 20px 0 30px;
+    color: var(--accent-color); /* Adjusted conversion text color */
 }
 
 form button {
@@ -122,10 +98,51 @@ form button {
     color: #fff;
     font-size: 18px;
     cursor: pointer;
-    background: #675AFE;
+    background: var(--accent-color);
     transition: 0.3s ease;
 }
 
 form button:hover {
-    background: #4534fe;
+    background: var(--hover-color);
+}
+
+/* Conversion History Section Styles */
+.history {
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--primary-bg-color);
+    border-radius: 7px;
+    box-shadow: var(--box-shadow);
+}
+
+.history h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+#conversionHistory {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#conversionHistory li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+#clearHistory {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#clearHistory:hover {
+    text-decoration: underline;
 }
