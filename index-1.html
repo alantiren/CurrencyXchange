@@ -1,54 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <!-- Metadata for the document -->
     <meta charset="utf-8">
     <title>CurrencyXchange App</title>
     <meta name="description" content="CurrencyXchange - Your Simple Currency Converter">
     <meta name="keywords" content="currency, converter, exchange rate">
     <meta name="author" content="Your Name">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheets for the document -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    <!-- Main wrapper for the content -->
     <div class="wrapper">
+        <!-- Header section for the application -->
         <header>CurrencyXchange</header>
+        
+        <!-- Form for currency conversion -->
         <form>
+            <!-- Input field for entering the amount -->
             <div class="amount">
                 <p>Enter Amount</p>
                 <input type="number" value="1" min="1" step="1">
             </div>
+            
+            <!-- Dropdowns for selecting 'from' and 'to' currencies -->
             <div class="drop-list">
+                <!-- 'From' currency section -->
                 <div class="from">
                     <p>From</p>
                     <div class="select-box">
+                        <!-- Flag image for 'from' currency -->
                         <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                        <!-- Dropdown for 'from' currency -->
                         <select id="fromCurrency"> <!-- Options are inserted from JavaScript --> </select>
                     </div>
                 </div>
+                
+                <!-- Exchange icon -->
                 <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                
+                <!-- 'To' currency section -->
                 <div class="to">
                     <p>To</p>
                     <div class="select-box">
+                        <!-- Flag image for 'to' currency -->
                         <img src="https://flagcdn.com/48x36/np.png" alt="flag">
+                        <!-- Dropdown for 'to' currency -->
                         <select id="toCurrency"> <!-- Options are inserted from JavaScript --> </select>
                     </div>
                 </div>
             </div>
+            
+            <!-- Display area for showing the exchange rate -->
             <div class="exchange-rate">Getting exchange rate...</div>
+            
+            <!-- Button to initiate currency conversion -->
             <button type="button" id="convertButton">Convert</button>
         </form>
 
         <!-- Conversion History Section -->
         <div class="history">
           <h2>Conversion History</h2>
+          <!-- List to display conversion history -->
           <ul id="conversionHistory">
             <!-- This is where your conversion history will be displayed -->
           </ul>
+          <!-- Button to clear conversion history -->
           <button id="clearHistory">Clear History</button>
         </div>
     </div>
 
+    <!-- JavaScript files for functionality -->
     <script src="js/country-list.js"></script>
     <script src="js/script.js"></script>
 </body>

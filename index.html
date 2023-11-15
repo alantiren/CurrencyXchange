@@ -2,12 +2,16 @@
 <html lang="en" dir="ltr">
 
 <head>
+    <!-- Document metadata -->
     <meta charset="utf-8">
     <title>CurrencyXchange</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Internal styles for the document -->
     <style>
+        /* General styling for the body */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -17,20 +21,24 @@
             text-align: center;
         }
 
+        /* Styling for the cover image */
         .cover-image {
             max-width: 100%;
             height: auto;
             border-radius: 8px 8px 0 0;
         }
 
+        /* Styling for the landing section */
         .landing {
             padding: 20px;
         }
 
+        /* Font sizes for headers and paragraphs */
         h1, h2, p {
             font-size: 1.5em;
         }
 
+        /* Styling for the header bar */
         .header-bar {
             background-color: #3498db;
             padding: 10px;
@@ -39,12 +47,14 @@
             border-radius: 0 0 8px 8px;
         }
 
+        /* Styling for navigation items */
         .nav-item {
             color: white;
             text-decoration: none;
             font-size: 1.2em;
         }
 
+        /* Styling for the call-to-action button */
         .cta-button {
             margin-top: 20px;
             background-color: #3498db;
@@ -57,10 +67,12 @@
             display: inline-block;
         }
 
+        /* Hover effect for the call-to-action button */
         .cta-button:hover {
             background-color: #2980b9;
         }
 
+        /* Styling for the feature section */
         .feature {
             margin-top: 50px;
             display: flex;
@@ -68,6 +80,7 @@
             flex-wrap: wrap;
         }
 
+        /* Styling for individual feature items */
         .feature-item {
             width: 60%;
             padding: 20px;
@@ -77,27 +90,32 @@
             background-color: #ffffff;
         }
 
+        /* Hover effect for individual feature items */
         .feature-item:hover {
             transform: scale(1.05);
         }
 
+        /* Styling for images within feature items */
         .feature-item img {
             width: 100%;
             border-radius: 8px;
             margin-bottom: 10px;
         }
 
+        /* Styling for headers within feature items */
         .feature-item h2 {
             font-size: 1.8em;
             margin-bottom: 10px;
             color: #333;
         }
 
+        /* Styling for paragraphs within feature items */
         .feature-item p {
             font-size: 1.5em;
             color: #666;
         }
 
+        /* Styling for the about section */
         .about {
             margin-top: 50px;
             text-align: left;
@@ -105,23 +123,27 @@
             margin: 0 auto;
         }
 
+        /* Styling for headers within the about section */
         .about h2 {
             font-size: 2em;
             color: #333;
             margin-bottom: 10px;
         }
 
+        /* Styling for paragraphs within the about section */
         .about p {
             font-size: 1.2em;
             color: #666;
         }
 
+        /* Styling for the video section */
         .video-section {
             margin-top: 50px;
             max-width: 800px;
             margin: 0 auto;
         }
 
+        /* Styling for the video iframe */
         .video-section iframe {
             width: 100%;
             height: 400px;
@@ -131,46 +153,54 @@
 </head>
 
 <body>
+    <!-- Main landing section -->
     <div class="landing">
+        <!-- Cover image for the project -->
         <img class="cover-image" src="./images/coverimage.png" alt="Project Cover Image">
         
+        <!-- Project title and description -->
         <h1>CurrencyXchange</h1>
         <p>Seamless currency conversion at your fingertips.</p>
 
+        <!-- Navigation bar for project sections -->
         <div class="header-bar">
             <a href="#section1" class="nav-item">Features</a>
             <a href="#section2" class="nav-item">About the Project</a>
         </div>
 
+        <!-- Call-to-action button to visit the app -->
         <a href="index-1.html" class="cta-button">Visit App</a>
 
         <!-- Section 1 - Feature Section -->
         <section id="section1" class="feature">
-            <!-- Your single feature item goes here -->
+            <!-- Feature item -->
             <div class="feature-item">
                 <img src="./images/feature1-image.jpeg" alt="Feature 1 Image">
                 <h2>History</h2>
-                <p>Your currency convertion data can be stored locally to view later</p>
+                <p>Your currency conversion data can be stored locally to view later</p>
             </div>
         </section>
 
         <!-- Section 2 - About Section -->
         <section id="section2" class="about">
+            <!-- About the project content -->
             <h2>About the Project</h2>
-            <p>CurrencyXchange stems from personal experiences as a brother to an avid traveler.When transferring funds to him or vice versa, we both have to have knowledge about the currencies and the exchange rates.
-               Navigating through diverse currencies during trips often posed challenges in obtaining real-time and accurate exchange rates.
-               The inconvenience led to the realization that a streamlined and user-friendly currency conversion tool could significantly enhance the travel experience.
-               The desire to create a solution that not only caters to the needs of travelers but also provides a seamless currency conversion experience for businesses and individuals drove the inception of CurrencyXchange. The project aims to simplify currency conversion, making it accessible at users' fingertips and ensuring quick and reliable financial transactions in any part of the world.
-               Additionally, the project serves as a learning journey in full-stack development, incorporating technologies such as javascript, html, and API integration. By combining the practical utility of a currency converter with the opportunity to enhance technical skills, CurrencyXchange embodies the fusion of personal necessity and professional growth.</p>
+            <p>CurrencyXchange stems from personal experiences as a brother to an avid traveler. When transferring funds to him or vice versa, we both have to have knowledge about the currencies and the exchange rates.
+                Navigating through diverse currencies during trips often posed challenges in obtaining real-time and accurate exchange rates.
+                The inconvenience led to the realization that a streamlined and user-friendly currency conversion tool could significantly enhance the travel experience.
+                The desire to create a solution that not only caters to the needs of travelers but also provides a seamless currency conversion experience for businesses and individuals drove the inception of CurrencyXchange. The project aims to simplify currency conversion, making it accessible at users' fingertips and ensuring quick and reliable financial transactions in any part of the world.
+                Additionally, the project serves as a learning journey in full-stack development, incorporating technologies such as JavaScript, HTML, and API integration. By combining the practical utility of a currency converter with the opportunity to enhance technical skills, CurrencyXchange embodies the fusion of personal necessity and professional growth.</p>
 
-               <a href="https://github.com/alantiren" target="_blank">GitHub Profile</a><br>
-               <a href="https://github.com/alantiren/CurrencyXchange" target="_blank">Project GitHub</a><br>
-               <a href="https://www.linkedin.com/in/alan-tiren-b59701164/" target="_blank">LinkedIn Profile</a><br>
-               <a href="https://twitter.com/k3mbo1" target="_blank">Twitter Profile</a>
+            <!-- Links to profiles and project repositories -->
+            <a href="https://github.com/alantiren" target="_blank">GitHub Profile</a><br>
+            <a href="https://github.com/alantiren/CurrencyXchange" target="_blank">Project GitHub</a><br>
+            <a href="https://www.linkedin.com/in/alan-tiren-b59701164/"target="_blank">LinkedIn Profile</a><br>
+            <a href="https://twitter.com/k3mbo1" target="_blank">Twitter Profile</a>
         </section>
 
         <!-- Section 3 - Optional Video Section -->
         <section class="video-section">
+            <!-- Video introduction content -->
             <h2>Project Introduction Video</h2>
             <!-- Replace the src attribute with the actual URL of your video -->
             <iframe width="560" height="315" src="https://www.youtube.com/embed/brqMIODoZ2Q" frameborder="0" allowfullscreen></iframe>
