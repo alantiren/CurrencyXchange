@@ -1,6 +1,6 @@
 # CurrencyXchange - Bridging Currencies One Conversion at a Time
 
-![CurrencyXchange Banner](./images/currencyxchange-banner.png)
+![CurrencyXchange Banner](./images/coverimage.png)
 *Seamless Currency Conversion at Your Fingertips*
 
 ## Introduction
@@ -35,7 +35,7 @@ While CurrencyXchange is functional and user-friendly, there's always room for i
 
 ### Architecture
 
-![CurrencyXchange Architecture](./images/currencyxchange-architecture.png)
+![CurrencyXchange Architecture](./images/architecture.jpg)
 
 The architecture follows a client-server model, with the frontend built using HTML, CSS, and JavaScript. The backend leverages the ExchangeRate-API to fetch real-time exchange rates. The seamless communication between the frontend and backend ensures a swift and accurate currency conversion experience.
 
@@ -53,7 +53,6 @@ CurrencyXchange is not just a set of files; it's a journey of growth, challenges
 
 ## Get Started
 
-![CurrencyXchange Screenshot](path-to-your-screenshot.png)
 ![Landing Page](./images/mainpage.jpeg)
 ![App Page](./images/sitepage.jpeg)
 
