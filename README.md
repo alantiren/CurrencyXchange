@@ -86,9 +86,9 @@ To experience the simplicity of CurrencyXchange, [visit the app](https://alantir
 
 ## Connect with the Composer
 
-- [GitHub Profile](https://github.com/alantiren) ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github)
-- [LinkedIn Profile](https://www.linkedin.com/in/alan-tiren-b59701164/) ![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin)
-- [Twitter](https://twitter.com/k3mbo1) ![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat&logo=twitter)
+- (https://github.com/alantiren) ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github)
+- (https://www.linkedin.com/in/alan-tiren-b59701164/) ![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin)
+- (https://twitter.com/k3mbo1) ![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat&logo=twitter)
 
 ---
 
