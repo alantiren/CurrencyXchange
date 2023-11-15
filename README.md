@@ -1,6 +1,7 @@
 # CurrencyXchange - Bridging Currencies One Conversion at a Time
 
 ![CurrencyXchange Banner](./images/coverimage.png)
+
 *Seamless Currency Conversion at Your Fingertips*
 
 ## Introduction
