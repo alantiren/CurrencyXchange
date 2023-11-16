@@ -1,5 +1,7 @@
+/* Importing Google Fonts for a modern and clean typeface */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* Root level CSS variables for consistent theming */
 :root {
     --primary-bg-color: #2c3e50; /* Dark Background */
     --primary-text-color: #fff; /* White Text */
@@ -8,6 +10,7 @@
     --box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Global styling for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +18,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Styling for the entire body of the document */
 body {
     display: flex;
     align-items: center;
@@ -25,11 +29,13 @@ body {
     color: var(--primary-text-color);
 }
 
+/* Styling for text selection */
 ::selection {
     color: #fff;
     background: var(--accent-color);
 }
 
+/* Styling for the main wrapper containing the form */
 .wrapper {
     width: 370px;
     padding: 30px;
@@ -38,6 +44,7 @@ body {
     box-shadow: var(--box-shadow);
 }
 
+/* Styling for the header within the wrapper */
 .wrapper header {
     font-size: 28px;
     font-weight: 600;
@@ -45,6 +52,7 @@ body {
     color: var(--accent-color); /* Adjusted title color */
 }
 
+/* Styling for form elements (input, select, button) */
 form :where(input, select, button) {
     width: 100%;
     outline: none;
@@ -52,6 +60,7 @@ form :where(input, select, button) {
     border: 1px solid #ccc;
 }
 
+/* Styling for input fields within the form */
 form input {
     height: 50px;
     font-size: 16px;
@@ -60,21 +69,25 @@ form input {
     color: #333; /* Adjusted input text color */
 }
 
+/* Styling for focused input fields */
 form input:focus {
     padding: 0 14px;
     border: 2px solid var(--accent-color);
 }
 
+/* Styling for form paragraphs (labels) */
 form p {
     font-size: 18px;
     margin-bottom: 10px;
     color: var(--accent-color); /* Adjusted label color */
 }
 
+/* Styling for the drop-down list within the form */
 .drop-list img {
     max-width: 24px;
 }
 
+/* Styling for select elements within the drop-down list */
 .drop-list select {
     width: auto;
     font-size: 16px;
@@ -83,16 +96,19 @@ form p {
     color: #333; /* Adjusted select text color */
 }
 
+/* Styling for select options within the drop-down list */
 .drop-list select option {
     color: #333;
 }
 
+/* Styling for the exchange rate display in the form */
 .form .exchange-rate {
     font-size: 17px;
     margin: 20px 0 30px;
     color: var(--accent-color); /* Adjusted conversion text color */
 }
 
+/* Styling for the form submit button */
 form button {
     height: 52px;
     color: #fff;
@@ -102,11 +118,12 @@ form button {
     transition: 0.3s ease;
 }
 
+/* Styling for the form submit button on hover */
 form button:hover {
     background: var(--hover-color);
 }
 
-/* Conversion History Section Styles */
+/* Styling for the Conversion History section */
 .history {
     margin-top: 20px;
     padding: 20px;
@@ -115,12 +132,14 @@ form button:hover {
     box-shadow: var(--box-shadow);
 }
 
+/* Styling for the heading within the Conversion History section */
 .history h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: var(--accent-color);
 }
 
+/* Styling for the list container within the Conversion History section */
 #conversionHistory {
     list-style: none;
     padding: 0;
@@ -129,12 +148,14 @@ form button:hover {
     overflow-y: auto;
 }
 
+/* Styling for individual items within the Conversion History list */
 #conversionHistory li {
     margin-bottom: 5px;
     font-size: 14px;
     color: #ccc;
 }
 
+/* Styling for the 'Clear History' button within the Conversion History section */
 #clearHistory {
     background: none;
     border: none;
@@ -143,6 +164,7 @@ form button:hover {
     font-size: 14px;
 }
 
+/* Styling for the 'Clear History' button on hover */
 #clearHistory:hover {
     text-decoration: underline;
 }
