@@ -82,7 +82,7 @@ function getExchangeRate() {
 
   // Check if the amount is empty or zero
   if (amountVal === "" || amountVal === "0") {
-    amountInput.value = "0"; // Default to 0
+    amountInput.value = "1"; // Default to 1 if empty or zero
   }
 
   exchangeRateTxt.innerText = "Getting exchange rate..."; // Display loading message
